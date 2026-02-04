@@ -102,4 +102,12 @@ app.post("/api/ai-assistant/chat", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("🚀 PHC Assistant (ChromaDB + Gemini) live on 3000"));
+app.get("/",(req,res)=>{
+  return res.json({success:true, message: "Server is running on port 4000"})
+})
+
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 AI backend running on port ${PORT}`);
+});
