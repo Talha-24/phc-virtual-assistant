@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "nodemon chroma.js",
+    "start": "node chroma.js",
     "dev": "nodemon chroma.js"
   },
   "dependencies": {
